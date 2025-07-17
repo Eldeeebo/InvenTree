@@ -46,7 +46,7 @@ export function BarcodeInput({
   const scanningOptions: SegmentedControlItem[] = useMemo(() => {
     const options: SegmentedControlItem[] = [];
 
-    if (globalSettings.isSet('BARCODE_WEBCAM_SUPPORT', true)) {
+    if (globalSettings.isSet('BARCODE_WEBCAM_SUPPORT')) {
       options.push({
         value: 'camera',
         label: (

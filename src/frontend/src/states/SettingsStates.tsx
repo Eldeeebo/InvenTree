@@ -63,8 +63,8 @@ export const useGlobalSettingsState = create<SettingsStateProps>(
     getSetting: (key: string, default_value?: string) => {
       return get().lookup[key] ?? default_value ?? '';
     },
-    isSet: (key: string, default_value?: boolean) => {
-      const value = get().lookup[key] ?? default_value ?? 'false';
+    isSet: (key: string, default_value: boolean = false) => {
+      const value = get().lookup[key] ?? default_value;
       return isTrue(value);
     }
   })
