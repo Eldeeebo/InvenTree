@@ -42,14 +42,6 @@ export function AboutInvenTreeModal({
     modalBody: string;
   }>
 >) {
-  const [user] = useUserState(useShallow((state) => [state.user]));
-
-  if (!user?.is_staff)
-    return (
-      <Text>
-        <Trans>This information is only available for staff users</Trans>
-      </Text>
-    );
   return <AboutContent context={context} id={id} innerProps={innerProps} />;
 }
 
@@ -96,7 +88,7 @@ const AboutContent = ({
   const commit_set: boolean =
     data.version.commit_hash && data.version.commit_date;
 
-  const copyval = `InvenTree-Version: ${data.version.server}\nDjango Version: ${
+  const copyval = `AwladOmar-Version: ${data.version.server}\nDjango Version: ${
     data.version.django
   }\n${
     commit_set
@@ -113,7 +105,7 @@ const AboutContent = ({
   const tableData = [
     {
       ref: 'server',
-      title: <Trans>InvenTree Version</Trans>,
+      title: <Trans>AwladOmar Version</Trans>,
       link: 'https://github.com/inventree/InvenTree/releases',
       copy: true
     },

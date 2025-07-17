@@ -72,8 +72,8 @@ window.INVENTREE_SETTINGS = {
     ...(IS_DEV_OR_DEMO
       ? {
           'server-demo': {
-            host: 'https://demo.inventree.org/',
-            name: 'InvenTree Demo'
+            host: 'https://demo.awladomar.com/',
+            name: 'AwladOmar Demo'
           }
         }
       : {}),

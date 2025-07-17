@@ -1,12 +1,12 @@
 {
-    "name": "@inventreedb/ui",
-    "description": "UI components for the InvenTree project",
+    "name": "awladomar",
+    "description": "UI components for the AwladOmar project",
     "version": "0.3.1",
     "private": false,
     "type": "module",
     "license": "MIT",
     "keywords": [
-        "inventree"
+        "awladomar"
     ],
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -20,16 +20,16 @@
         "README.md",
         "CHANGELOG.md"
     ],
-    "homepage": "https://inventree.org",
+    "homepage": "https://awladomar.com",
     "repository": {
         "type": "git",
-        "url": "https://github.com/inventree/inventree"
+        "url": "https://github.com/awladomar/awladomar"
     },
     "author": {
-        "name": "InvenTree Developers",
-        "email": "support@inventree.org",
-        "url": "https://inventree.org",
-        "org": "InvenTree"
+        "name": "AwladOmar Developers",
+        "email": "support@awladomar.com",
+        "url": "https://awladomar.com",
+        "org": "AwladOmar"
     },
     "scripts": {
         "dev": "vite",
